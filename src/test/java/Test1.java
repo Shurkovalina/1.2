@@ -8,9 +8,9 @@ public class Test1 {
     @Test
     void test1() {
         given()
-                .baseUri("http://json-schema.org/draft-07/schema")
+                .baseUri("accounts.schema.json")
         .when()
-                .get("http://json-schema.org/draft-07/schema")
+                .get("accounts.schema.json")
         .then()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
