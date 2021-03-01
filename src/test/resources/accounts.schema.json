@@ -28,10 +28,11 @@
       },
       "currency": {
         "type": "string",
-        "pattern": "(RUB|USD)"
+        "enum": [
+          "RUR",
+          "USD"
+        ]
       }
     }
   }
-}
-}
 }
